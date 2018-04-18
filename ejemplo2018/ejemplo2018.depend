@@ -1,23 +1,24 @@
 # depslib dependency file v1.0
-1523562157 source:c:\users\anibal\workspace\c\estructurada\ejemplo2018\main.c
+1524064929 source:c:\users\anibal\workspace\c\estructurada\ejemplo2018\main.c
 	<stdio.h>
 	<stdlib.h>
+	<locale.h>
 	"../menu_generico/menu.h"
 
-1523555961 source:c:\users\anibal\workspace\c\estructurada\menu_generico\entrada_salida.c
+1524064146 source:c:\users\anibal\workspace\c\estructurada\menu_generico\entrada_salida.c
 	<stdio.h>
+	<stdlib.h>
 	"entrada_salida.h"
 
 1523555854 c:\users\anibal\workspace\c\estructurada\menu_generico\entrada_salida.h
 
-1523561507 source:c:\users\anibal\workspace\c\estructurada\menu_generico\menu.c
+1524064911 source:c:\users\anibal\workspace\c\estructurada\menu_generico\menu.c
 	<stdio.h>
 	<ctype.h>
 	"menu.h"
 	"entrada_salida.h"
 
-1523561989 c:\users\anibal\workspace\c\estructurada\menu_generico\menu.h
-	"../ejemplo2018/operaciones.h"
+1524064925 c:\users\anibal\workspace\c\estructurada\menu_generico\menu.h
 
 1523562262 c:\users\anibal\workspace\c\estructurada\ejemplo2018\operaciones.h
 

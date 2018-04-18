@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "entrada_salida.h"
 
 unsigned char leer_stdin()
@@ -10,7 +11,7 @@ unsigned char leer_stdin()
         c = getchar();
         if (c == EOF)
         {
-            seguir == 1;
+            seguir = 1;
         }
     } while (seguir);
     vaciar_stdin();

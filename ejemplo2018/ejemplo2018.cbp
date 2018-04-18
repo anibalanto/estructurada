@@ -31,9 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="../menu_generico/codigo_operacion.h" />
+		<Unit filename="../menu_generico/entrada_salida.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../menu_generico/entrada_salida.h" />
+		<Unit filename="../menu_generico/menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../menu_generico/menu.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="operaciones.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

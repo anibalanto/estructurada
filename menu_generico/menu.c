@@ -1,11 +1,9 @@
 #include <stdio.h>
- //uso de tolower:
-#include <ctype.h>
+#include <ctype.h> //uso de tolower:
 #include "menu.h"
 #include "entrada_salida.h"
 
-
-#define MENU_OPCION_INCORRECTA -1
+#define MENU_INDEX_OPERACION_INCORRECTA -1
 
 void menu_mostrar()
 {
@@ -15,7 +13,7 @@ void menu_mostrar()
     }
 }
 
-int menu_opcion(unsigned char c)
+int menu_index_operacion(unsigned char c)
 {
     int mapea = 0;
     int i = 0;
@@ -46,25 +44,26 @@ int menu_confirmar_salida()
     return s == 's';
 }
 
-codigo_operacion menu_operacion()
+int menu_operacion()
 {
     unsigned char c;
-    int opcion;
+    int index_operacion;
     do
     {
         borrar_stdout();
         menu_mostrar();
         printf("Ingrese una opción: ");
         c = leer_stdin();
-        opcion = menu_opcion(c);
-        if(opcion == MENU_OPCION_INCORRECTA)
+        index_operacion = menu_index_operacion(c);
+        if(index_operacion == MENU_INDEX_OPERACION_INCORRECTA)
         {
             printf("Opción incorrecta!\n");
             getchar();
         }
 
-    }while(opcion == MENU_OPCION_INCORRECTA);
-    return menu_operaciones[opcion];
+    }while(index_operacion == MENU_INDEX_OPERACION_INCORRECTA
+           || (menu_operaciones[index_operacion] == MENU_OPERACION_FIN && ! menu_confirmar_salida()));
+    return menu_operaciones[index_operacion];
 }
 
 
